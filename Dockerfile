@@ -1,6 +1,6 @@
-FROM ubuntu:16.04
+FROM armv7/armhf-ubuntu:15.10
 
-MAINTAINER Atsushi Nagase<ngs@oneteam.co.jp>
+MAINTAINER Atsushi Nagase<a@ngs.io>
 
 RUN apt-get update -y && apt-get install -y --no-install-recommends \
   git cmake ninja-build clang python uuid-dev libicu-dev icu-devtools libbsd-dev libedit-dev libxml2-dev libsqlite3-dev swig libpython-dev libncurses5-dev pkg-config
